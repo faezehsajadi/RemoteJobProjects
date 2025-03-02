@@ -21,3 +21,4 @@ These are my little projects to promote programming and enhance learning!
 ## تماس
 
 برای همکاری یا پیشنهاد شغل ریموت، از [لینکدین من] یا [ایمیل من](a2r,sahar@gmail.com) استفاده کن.
+برای همکاری یا پیشنهاد شغل ریموت، از [لینکدین من{www.linkedin.com/in/faezeh-sajadi}] ) یا [ایمیل من](a2r,sahar@gmail.com) استفاده کن.
