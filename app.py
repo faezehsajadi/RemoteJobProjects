@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import json
 import os
 
-app = Flask(name)
+app = Flask(__name__)
 TASKS_FILE = 'tasks.json'
 
 # بارگذاری یا ایجاد فایل tasks
@@ -57,5 +57,5 @@ def edit_task(index):
         return jsonify({'error': 'No task provided or empty task'}), 400
     return jsonify({'error': 'Invalid index'}), 404
 
-if name == 'main':
+if __name__ == 'main':
     app.run(debug=True, host='0.0.0.0', port=5000)
