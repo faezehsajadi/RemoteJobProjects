@@ -57,5 +57,6 @@ def edit_task(index):
         return jsonify({'error': 'No task provided or empty task'}), 400
     return jsonify({'error': 'Invalid index'}), 404
 
-if __name__ == 'main':
+if __name__ == '_main_':
+    print("Server is starting on http://0.0.0.0:5000")
     app.run(debug=True, host='0.0.0.0', port=5000)
