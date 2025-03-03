@@ -44,7 +44,7 @@ function displayTasks() {
         const taskSpan = document.createElement('span');
         taskSpan.textContent = task.text;
         const timestampSpan = document.createElement('span');
-        timestampSpan.textContent = - ${ task.time };
+        timestampSpan.textContent = `- ${task.time}`; // اصلاح شده
         timestampSpan.className = 'timestamp';
 
         // دکمه ویرایش
