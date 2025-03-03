@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffffff; /* بک‌گراند سفید برای صفحه */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,13 +11,20 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه خاکستری */
+  width: 400px; /* عرض ثابت برای بهتر دیده شدن */
+}
+#datetime {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
 }
 #taskInput {
   padding: 10px;
   margin-right: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  width: 200px;
 }
 button {
   padding: 10px 20px;
@@ -60,4 +67,9 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#taskList li span.timestamp {
+  font-size: 12px;
+  color: #888;
+  margin-left: 10px;
 }
