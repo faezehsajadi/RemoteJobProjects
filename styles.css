@@ -1,75 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* بک‌گراند سفید برای صفحه */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-.container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه خاکستری */
-  width: 400px; /* عرض ثابت برای بهتر دیده شدن */
-}
-#datetime {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 15px;
-}
-#taskInput {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 200px;
-}
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #45a049;
-}
-/* استایل جدید برای دکمه‌های ویرایش و حذف */
-.delete-btn,
-.edit-btn {
-  padding: 5px 10px;
-  margin-left: 10px;
-  background-color: #f44336; /* قرمز برای حذف */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.edit-btn {
-  background-color: #2196f3; /* آبی برای ویرایش */
-}
-.delete-btn:hover,
-.edit-btn:hover {
-  opacity: 0.8;
-}
-#taskList {
-  list-style-type: none;
-  padding: 0;
-}
-#taskList li {
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#taskList li span.timestamp {
-  font-size: 12px;
-  color: #888;
-  margin-left: 10px;
-}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            /* بک‌گراند سفید برای صفحه */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* سایه خاکستری */
+            width: 400px;
+            /* عرض ثابت برای بهتر دیده شدن */
+        }
+
+        #datetime {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        #taskInput {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* استایل جدید برای دکمه‌های ویرایش و حذف */
+        .delete-btn,
+        .edit-btn {
+            padding: 5px 10px;
+            margin-left: 10px;
+            background-color: #f44336;
+            /* قرمز برای حذف */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-btn {
+            background-color: #2196F3;
+            /* آبی برای ویرایش */
+        }
+
+        .delete-btn:hover,
+        .edit-btn:hover {
+            opacity: 0.8;
+        }
+
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #taskList li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #taskList li span.timestamp {
+            font-size: 12px;
+            color: #888;
+            margin-left: 10px;
+        }
+
+        #saveToFileButton {
+            margin-top: 10px;
+            background-color: #2196F3;
+            /* آبی برای دکمه ذخیره */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #saveToFileButton:hover {
+            background-color: #1976D2;
+        }

@@ -44,7 +44,7 @@ function displayTasks() {
         const taskSpan = document.createElement('span');
         taskSpan.textContent = task.text;
         const timestampSpan = document.createElement('span');
-        timestampSpan.textContent = `- ${task.time}`; // اصلاح شده
+        timestampSpan.textContent = `- ${task.time}`; // حفظ تاریخ و ساعت
         timestampSpan.className = 'timestamp';
 
         // دکمه ویرایش
@@ -83,4 +83,23 @@ function editTask(index) {
         tasks[index] = { text: newTask.trim(), time: timestamp };
         displayTasks();
     }
+}
+
+function saveTasksToFile() {
+    // ایجاد محتوای متنی برای لیست تودو
+    let textContent = 'لیست کارهای من:\n\n';
+    tasks.forEach((task, index) => {
+        textContent += `${index + 1}. ${task.text} - ${task.time}\n`;
+    });
+
+    // ذخیره به‌عنوان فایل متنی و دانلود
+    const blob = new Blob([textContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'tasks.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
 }

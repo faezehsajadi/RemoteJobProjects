@@ -98,7 +98,7 @@
             margin-left: 10px;
         }
 
-        #saveButton {
+        #saveToFileButton {
             margin-top: 10px;
             background-color: #2196F3;
             /* آبی برای دکمه ذخیره */
@@ -109,7 +109,7 @@
             cursor: pointer;
         }
 
-        #saveButton:hover {
+        #saveToFileButton:hover {
             background-color: #1976D2;
         }
     </style>
@@ -123,7 +123,7 @@
         <input type="text" id="taskInput" placeholder="کار جدید وارد کن...">
         <button onclick="addTask()">اضافه کن</button>
         <ul id="taskList"></ul>
-        <button id="saveButton" onclick="saveTasks()">ذخیره لیست</button>
+        <button id="saveToFileButton" onclick="saveTasksToFile()">ذخیره به فایل متنی</button>
     </div>
     <script src="script.js"></script>
 </body>
