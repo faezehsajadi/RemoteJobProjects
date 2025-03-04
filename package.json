@@ -1,0 +1,12 @@
+{
+  "name": "remotejobprojects",
+  "version": "1.0.0",
+  "description": "Todo List Web App",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'No build required'"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
