@@ -97,6 +97,21 @@
             color: #888;
             margin-left: 10px;
         }
+
+        #saveButton {
+            margin-top: 10px;
+            background-color: #2196F3;
+            /* آبی برای دکمه ذخیره */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #saveButton:hover {
+            background-color: #1976D2;
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -108,6 +123,7 @@
         <input type="text" id="taskInput" placeholder="کار جدید وارد کن...">
         <button onclick="addTask()">اضافه کن</button>
         <ul id="taskList"></ul>
+        <button id="saveButton" onclick="saveTasks()">ذخیره لیست</button>
     </div>
     <script src="script.js"></script>
 </body>
