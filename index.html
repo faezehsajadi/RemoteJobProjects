@@ -98,10 +98,11 @@
             margin-left: 10px;
         }
 
-        #saveToFileButton {
+        #saveToFileButton,
+        #sendToTelegramButton {
             margin-top: 10px;
             background-color: #2196F3;
-            /* آبی برای دکمه ذخیره */
+            /* آبی برای دکمه‌ها */
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -109,7 +110,8 @@
             cursor: pointer;
         }
 
-        #saveToFileButton:hover {
+        #saveToFileButton:hover,
+        #sendToTelegramButton:hover {
             background-color: #1976D2;
         }
     </style>
@@ -124,6 +126,7 @@
         <button onclick="addTask()">اضافه کن</button>
         <ul id="taskList"></ul>
         <button id="saveToFileButton" onclick="saveTasksToFile()">ذخیره به فایل متنی</button>
+        <button id="sendToTelegramButton" onclick="sendToTelegram()">ارسال به تلگرام</button>
     </div>
     <script src="script.js"></script>
 </body>

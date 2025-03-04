@@ -103,3 +103,24 @@ function saveTasksToFile() {
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
 }
+
+// تابع جدید برای ارسال به تلگرام از طریق Netlify
+async function sendToTelegram() {
+    try {
+        const response = await fetch('/.netlify/functions/send-to-telegram', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ tasks })
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to send to Telegram');
+        }
+
+        const result = await response.json();
+        alert(result.message || 'List sent to Telegram successfully');
+    } catch (error) {
+        console.error('Error sending to Telegram:', error);
+        alert('Error sending to Telegram');
+    }
+}
